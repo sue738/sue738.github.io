@@ -1,9 +1,10 @@
+<img id="img" width="100%"></img>
 <script type="text/javascript">
-  window.onload = function() {
-    img = document.getElementById("img");
-    rand = Math.floor( Math.random() * 20 ) + 1
-    img.src="https://raw.githubusercontent.com/sue738/yep2017/master/img/" + rand + ".png"
-  }
+  img = document.getElementById("img");
+  rand = Math.floor( Math.random() * 20 ) + 1
+  img.src="img/" + rand + ".png"
 </script>
-
-<img id="img" src="" width="100%"></img>
+<noscript>
+  <!-- js無効だった場合には1.pngを強制的に出す -->
+  <img src="img/1.png"></img>
+</noscript>
